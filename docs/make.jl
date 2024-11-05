@@ -1,7 +1,7 @@
 import Pkg
 Pkg.add("Documenter")
 
-using Documenter, Example
+using Documenter
 
 makedocs(sitename="ECA Documentation",pages = [
     "Home" => "index.md",
