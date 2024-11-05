@@ -16,7 +16,7 @@ makedocs(sitename="ECA Documentation",pages = [
     ])
 
     deploydocs(;
-    repo="github.com/fhernandez93/ECADocumentation",
+    repo="github.com/fhernandez93/ECADocumentationTest",
     versions=nothing,
     branch="gh-pages"
 )
