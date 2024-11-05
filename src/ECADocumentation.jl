@@ -1,4 +1,4 @@
-module HelloWorld
+module ECADocumentation
 
 function say_hello()
     println("Hello, World!")
