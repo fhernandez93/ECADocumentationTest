@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Client&#39;s Section · ECA Documentation</title><meta name="title" content="Client&#39;s Section · ECA Documentation"/><meta property="og:title" content="Client&#39;s Section · ECA Documentation"/><meta property="twitter:title" content="Client&#39;s Section · ECA Documentation"/><meta name="description" content="Documentation for ECA Documentation."/><meta property="og:description" content="Documentation for ECA Documentation."/><meta property="twitter:description" content="Documentation for ECA Documentation."/><script data-outdated-warner src="../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../search_index.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><a class="docs-logo" href="../"><img src="../assets/logo.png" alt="ECA Documentation logo"/></a><div class="docs-package-name"><span class="docs-autofit"><a href="../">ECA Documentation</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><span class="tocitem">Miscellaneous</span><ul><li><a class="tocitem" href="../Miscellaneous/">General Info on miscellaneous components</a></li></ul></li><li><span class="tocitem">ECA App Modules</span><ul><li><a class="tocitem" href="../MainScreen/">Main Screen</a></li><li><a class="tocitem" href="../SearchEmployees/">Example.jl Documentation frgergergwergerg</a></li></ul></li><li><span class="tocitem">Employee Profile</span><ul><li><a class="tocitem" href="../EmployeeProfileScreens/">Employee Profile</a></li><li><a class="tocitem" href="../EmployeeProfileForm/">Employee Profile Form</a></li></ul></li><li><span class="tocitem">Client Section</span><ul><li class="is-active"><a class="tocitem" href>Client&#39;s Section</a><ul class="internal"><li><a class="tocitem" href="#addClient"><span>Add New/Edit Client</span></a></li><li><a class="tocitem" href="#clientDetails"><span>Client Details</span></a></li><li><a class="tocitem" href="#clientAddEmployee"><span>Add Employees Screen</span></a></li></ul></li></ul></li><li><span class="tocitem">Calendar</span><ul><li><a class="tocitem" href="../CalendarScreen/">Calendar</a></li></ul></li><li><span class="tocitem">Administration</span><ul><li><a class="tocitem" href="../AdministrationScreen/">Administration</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">Client Section</a></li><li class="is-active"><a href>Client&#39;s Section</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Client&#39;s Section</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/fhernandez93/ECADocumentationTest" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/fhernandez93/ECADocumentationTest/blob/main/docs/src/ClientsScreens.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="ClientsSection"><a class="docs-heading-anchor" href="#ClientsSection">Client&#39;s Section</a><a id="ClientsSection-1"></a><a class="docs-heading-anchor-permalink" href="#ClientsSection" title="Permalink"></a></h1><p>This screen allows to search and preview information of clients. The only filter condition here is the status of the contract which can be &quot;Active&quot;, &quot;Prospect&quot; or &quot;Terminated&quot;. One can also add a new record if deemed necessary.</p><p><img src="../assets/ECA Screenshots/ClientsMain.png" alt="image"/></p><p>The data in the gallery (<strong>GalleryClients</strong>) is retrieved from the <strong>OPT - Customers Tables</strong> sharepoint list. The OnVisible property of the screen pulls the information into a collection: </p><pre><code class="nohighlight hljs">ClearCollect(customersColl,&#39;OPT - Customers Tables&#39;)</code></pre><p>This data is pulled, filtered and sorted on the Items property of the gallery: </p><pre><code class="nohighlight hljs">If(!IsBlank(txtSearchClient.Text) ||!IsBlank(DropdownStatusFilter.Selected.Value),
+//then
+Sort(Filter(
+    customersColl,
+    txtSearchClient.Text in Name,
+    If(!IsBlank(DropdownStatusFilter.Selected.Value),
+    &#39;Service Status&#39; = DropdownStatusFilter.Selected.Value, &#39;Service Status&#39; &lt;&gt; Blank())
+),Name),
+//else
+Sort(customersColl,Name
+))</code></pre><h2 id="addClient"><a class="docs-heading-anchor" href="#addClient">Add New/Edit Client</a><a id="addClient-1"></a><a class="docs-heading-anchor-permalink" href="#addClient" title="Permalink"></a></h2><p>By pressing &quot;Add New Client&quot; or &quot;Edit&quot;, the following code is executed: </p><pre><code class="nohighlight hljs">
+Set(
+    varDataEditCustomer, 
+    Blank()); // for New Client
+
+Set(
+    varDataEditCustomer, 
+    ThisItem
+); // For a client item
+
+Navigate(scrAddCustomer,ScreenTransition.Fade,{varDataEditCustomer:varDataEditCustomer});
+</code></pre><p>the <strong>varDataEditCustomer</strong> context variable controls the info displayed on the FormNewClient element. </p><p>If we click on the &quot;Add New Client&quot; or &quot;Edit&quot; buttons this screen will be displayed: </p><p><img src="../assets/ECA Screenshots/AddClient.png" alt="image"/></p><p>General functionality of forms is described in the <a href="../Miscellaneous/#Miscellaneous">Miscellaneous</a> section.</p><h2 id="clientDetails"><a class="docs-heading-anchor" href="#clientDetails">Client Details</a><a id="clientDetails-1"></a><a class="docs-heading-anchor-permalink" href="#clientDetails" title="Permalink"></a></h2><p>When navigating to this window we pass the following command: </p><pre><code class="nohighlight hljs">Navigate(scrServices,ScreenTransition.Fade,{varCustomerDetails:ThisItem});</code></pre><p>This <strong>varCustomerDetails</strong> context variable contains all information stored for this client in the <strong>OPT - Customers Tables</strong> SharePoint list. </p><p>The Client Details screen has four different sections: </p><ol><li><p>Client Info: The displayed info is pulled from the varCustomerDetails context variable. The &quot;Edit&quot; button navigates the user to the  <a href="#addClient">Edit Client</a> screen, and the &quot;Holiday Policy&quot; is referred as in the <a href="../AdministrationScreen/#HolidaysScr">Holidays</a> section of the administration module.</p><p><img src="../assets/ECA Screenshots/Client Details/ClientInfo.png" alt="image"/></p></li><li><p>Contacts: Displays the information linked to a specific client from the <strong>OPT - Clients Contacts</strong> table. This section functions as a regular form element as described in <a href="../Miscellaneous/#Miscellaneous">Miscellaneous</a>. </p><p><img src="../assets/ECA Screenshots/Client Details/ContactsInfo.png" alt="image"/></p></li><li><p>Services: Displays the information linked to a specific client from the <strong>OPT - Client Services</strong> table. This section functions as a regular form element as described in <a href="../Miscellaneous/#Miscellaneous">Miscellaneous</a>. </p><p><img src="../assets/ECA Screenshots/Client Details/ServicesInfo.png" alt="image"/></p></li><li><p>Employees: Displays the employees linked to a specific client and their services. This section is more complex than the previous ones as it involves three tables: <strong>OPT - Customers Tables</strong>, <strong>OPT - Client Services</strong>, and <strong>OPT - Employee Clients</strong>. </p><p><img src="../assets/ECA Screenshots/Client Details/EmployeesInfo.png" alt="image"/></p><p>The table itself displays information by grouping the <strong>servicesEmployeeClientColl</strong> collection by service:   <code>GroupBy(  Sort(servicesEmployeeClientColl,Service),  Service,  DATA  )</code></p><p>This collection is defined in the <strong>OnVisible</strong> property of the screen:</p></li></ol><pre><code class="nohighlight hljs">Set(CustomerID, varCustomerDetails.UniqueCustomerID);
+//Pulls customerId from context variable
+
+UpdateContext({varCustomerDetails:LookUp(
+    &#39;OPT - Customers Tables&#39;,UniqueCustomerID=CustomerID)}); 
+//Pulls most  up to date information from customers table
+
+ClearCollect(
+    ClientServicesColl,
+    Filter(
+        &#39;OPT - Client Services&#39;,
+        UniqueCustomerID = varCustomerDetails.UniqueCustomerID,
+        &#39;Service Status&#39; = &quot;Active&quot;
+    )
+);//Retrieves Services linked to specific client
+
+ClearCollect(
+    servicesEmployeeClientColl,
+    ForAll(
+        Filter(
+            &#39;OPT - Employee Clients&#39;,
+            UniqueCustomerID = varCustomerDetails.UniqueCustomerID,
+            &#39;Role Status&#39;=&quot;Active&quot;
+        ),
+        If(
+            !IsBlank(
+                Filter(
+                    ClientServicesColl,
+                    ServiceID = ThisRecord.ServiceID
+                )
+            ),
+            ThisRecord
+        )
+    )
+) // Retrieves employees linked to that specific service/client</code></pre><h2 id="clientAddEmployee"><a class="docs-heading-anchor" href="#clientAddEmployee">Add Employees Screen</a><a id="clientAddEmployee-1"></a><a class="docs-heading-anchor-permalink" href="#clientAddEmployee" title="Permalink"></a></h2><p>Here one can add active employees in bulk to active services for the selected client. You can access the <strong>Add Employees Screen</strong> from the &quot;Add Employees&quot; button in the section above. This button executes a basic snippet to navigate to the screen and pass a context variable with client details: </p><pre><code class="nohighlight hljs">Navigate(scrAddBulkEmployees,ScreenTransition.Fade,{varCustomerDetails:varCustomerDetails});</code></pre><p><img src="../assets/ECA Screenshots/Client Details/AddEmployeesScr.png" alt="image"/></p><p>The <strong>OnVisible</strong> property of the screen defines all variables that make the functionality of this screen: </p><pre><code class="nohighlight hljs">ClearCollect(Employees, Filter(&#39;OPT - Employees Informations&#39;, &#39;Employment Status&#39;=&quot;Active&quot;)); 
+//Active Employees
+
+ClearCollect(ColEmployees, AddColumns(Employees, IsChoosen, false));
+//Creates a new collection from active employees, and it includes 
+an additional column to store the state of the selection checkbox
+
+Set(varActiveServiceList,
+    Filter(
+        &#39;OPT - Client Services&#39;,
+        UniqueCustomerID = varCustomerDetails.UniqueCustomerID, 
+        &#39;Service Status&#39; = &quot;Active&quot;
+    )
+);
+//Active services from current client
+ 
+
+ClearCollect(NonSuccessfulUsers, {Name:&quot;&quot;})
+//Collection that stores employees that were not successfully added.</code></pre><div class="admonition is-info"><header class="admonition-header">Note</header><div class="admonition-body"><p>Employees can only be removed from a client, or change status by accessing their individual profiles. </p></div></div><p>The <strong>CheckboxSelectedEmployee</strong> within the <strong>GalleryEmployees</strong> object controls which users will be assigned to the selected service. Using the <strong>OnCheck</strong> and <strong>OnUncheck</strong> properties: </p><pre><code class="nohighlight hljs">Patch(ColEmployees,ThisItem,{IsChoosen:true}) //OnCheck property
+
+Patch(ColEmployees,ThisItem,{IsChoosen:false}) //OnUncheck property</code></pre><p>Finally, the <strong>add</strong> button validates the fields, and patches the information to the  &#39;OPT - Employee Clients&#39; table. </p><pre><code class="nohighlight hljs">//Validate inputs
+If(
+    IsBlank(DropdownActiveServices.Selected.Service) || IsBlank(DatePickerService.SelectedDate),
+    Notify(
+        &quot;Please select both a Service and a Start Date&quot;,
+        NotificationType.Error
+    ),
+    ClearCollect(
+        NonSuccessfulUsers,
+        {Name: &quot;&quot;}
+    );
+    Clear(tempMail);
+    
+    ForAll(
+        ColEmployees,
+        If(
+            ThisRecord.IsChoosen,
+    //Then
+            Collect(tempMail,{Mail:ThisRecord.&#39;Email Address&#39;});
+            If(
+                IsEmpty(
+                    Filter(
+                        &#39;OPT - Employee Clients&#39;,
+                        &#39;Email Address&#39; = Last(tempMail).Mail,
+                        UniqueCustomerID = varCustomerDetails.UniqueCustomerID,
+                        ServiceID=DropdownActiveServices.Selected.ServiceID
+                       
+                    )
+                ), //PowerApps doesn&#39;t allow to set variables within a for loop,
+                // so I have to use a collection and use the last item as the value of my variable
+            //THEN
+                Patch(
+                    &#39;OPT - Employee Clients&#39;,
+                    Defaults(&#39;OPT - Employee Clients&#39;),
+                    {
+                        Client: varCustomerDetails.Name,
+                        UniqueCustomerID: varCustomerDetails.UniqueCustomerID,
+                        Service: DropdownActiveServices.Selected.Service,
+                        ServiceID: DropdownActiveServices.Selected.ServiceID,
+                        &#39;Role Status&#39;: &quot;Active&quot;,
+                        &#39;Start Date&#39;: DatePickerService.SelectedDate,
+                        Name: ThisRecord.Name,
+                        &#39;Email Address&#39;: ThisRecord.&#39;Email Address&#39;,
+                        &#39;User System ID&#39;: ThisRecord.&#39;User System ID&#39;
+                    }
+                );, //I patch the employee if it&#39;s not yet assigned to this client/service
+                //ELSE
+                Patch(
+                    NonSuccessfulUsers,
+                    Defaults(NonSuccessfulUsers),
+                    {Name: ThisRecord.Name}
+                );
+            );
+            
+        );
+    );
+    Reset(DropdownActiveServices);
+    Notify(
+        &quot;Records Added to Database&quot;,
+        NotificationType.Success
+    );
+    UpdateIf(
+        ColEmployees,
+        true,
+        {IsChoosen: false}
+    );
+    
+)//End validation If
+</code></pre><p>The function also triggers the message below when some employees failed to patch:</p><p><img src="../assets/ECA Screenshots/Client Details/AddEmployeesScrError.png" alt="image"/></p><p>The label <strong>LabelWarningExisitingEmployee</strong> contaning this message is hidden when the <strong>NonSuccessfulUsers</strong> collection is empty: </p><pre><code class="nohighlight hljs">//Code at the OnVisible property of the label
+IsBlank(LookUp(NonSuccessfulUsers, !IsBlank(Name)))</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../EmployeeProfileForm/">« Employee Profile Form</a><a class="docs-footer-nextpage" href="../CalendarScreen/">Calendar »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.7.0 on <span class="colophon-date" title="Tuesday 5 November 2024 18:10">Tuesday 5 November 2024</span>. Using Julia version 1.11.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>

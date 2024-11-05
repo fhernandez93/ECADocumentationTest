@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Main Screen · ECA Documentation</title><meta name="title" content="Main Screen · ECA Documentation"/><meta property="og:title" content="Main Screen · ECA Documentation"/><meta property="twitter:title" content="Main Screen · ECA Documentation"/><meta name="description" content="Documentation for ECA Documentation."/><meta property="og:description" content="Documentation for ECA Documentation."/><meta property="twitter:description" content="Documentation for ECA Documentation."/><script data-outdated-warner src="../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../search_index.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><a class="docs-logo" href="../"><img src="../assets/logo.png" alt="ECA Documentation logo"/></a><div class="docs-package-name"><span class="docs-autofit"><a href="../">ECA Documentation</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><span class="tocitem">Miscellaneous</span><ul><li><a class="tocitem" href="../Miscellaneous/">General Info on miscellaneous components</a></li></ul></li><li><span class="tocitem">ECA App Modules</span><ul><li class="is-active"><a class="tocitem" href>Main Screen</a></li><li><a class="tocitem" href="../SearchEmployees/">Example.jl Documentation frgergergwergerg</a></li></ul></li><li><span class="tocitem">Employee Profile</span><ul><li><a class="tocitem" href="../EmployeeProfileScreens/">Employee Profile</a></li><li><a class="tocitem" href="../EmployeeProfileForm/">Employee Profile Form</a></li></ul></li><li><span class="tocitem">Client Section</span><ul><li><a class="tocitem" href="../ClientsScreens/">Client&#39;s Section</a></li></ul></li><li><span class="tocitem">Calendar</span><ul><li><a class="tocitem" href="../CalendarScreen/">Calendar</a></li></ul></li><li><span class="tocitem">Administration</span><ul><li><a class="tocitem" href="../AdministrationScreen/">Administration</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">ECA App Modules</a></li><li class="is-active"><a href>Main Screen</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Main Screen</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/fhernandez93/ECADocumentationTest" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/fhernandez93/ECADocumentationTest/blob/main/docs/src/MainScreen.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="MainAppScr"><a class="docs-heading-anchor" href="#MainAppScr">Main Screen</a><a id="MainAppScr-1"></a><a class="docs-heading-anchor-permalink" href="#MainAppScr" title="Permalink"></a></h1><p>The main screen, named &quot;scrDashboard&quot; in the Tree View of PowerApps, is presented here: </p><p><img src="../assets/ECA Screenshots/Main.png" alt="image"/></p><p>There are different visibilities that can be accessed using the buttons labeled &quot;Employee User&quot;, &quot;Integration User&quot;, etc., which are used to test different levels of access to the functionalities of the application. The visibility on the screenshot above corresponds to what a user in &quot;Dev&quot; mode observes. </p><pre><code class="nohighlight hljs">Set(UserRoleGlobal,&quot;Employee&quot;);
+Set(UserRole,&quot;Employee&quot;);
+UpdateContext({UserRole:&quot;Employee&quot;});</code></pre><p>Immediately after the application starts, the code in the &quot;OnVisible&quot; property of the window will be executed, followed by pieces of code in hidden elements. The most important pieces of code are discussed here. </p><ul><li>OnVisible Property:</li></ul><pre><code class="nohighlight hljs">Set(
+    userMail,
+    If(
+         IsBlank(LookUp(
+        &#39;OPT - Employees Informations&#39;,
+        &#39;User System ID&#39; = Text(User().EntraObjectId))),
+        
+        LookUp(
+        &#39;OPT - Employees Informations&#39;,
+        &#39;Email Address 2&#39; = User().Email).&#39;Email Address&#39;,
+
+
+         LookUp(
+        &#39;OPT - Employees Informations&#39;,
+        &#39;User System ID&#39; = Text(User().EntraObjectId)).&#39;Email Address&#39;
+
+    )
+    
+);
+Set(
+    UserRole1,
+    If(
+        IsBlank(
+            LookUp(
+                &#39;OPT - Admin Schemas&#39;,
+                &#39;Email Address&#39; = userMail
+            ).Role
+        ),
+        LookUp(
+            &#39;OPT - Admin Schemas&#39;,
+            &#39;Email Address 2&#39; = userMail
+        ).Role,
+        LookUp(
+            &#39;OPT - Admin Schemas&#39;,
+            &#39;Email Address&#39; = userMail
+        ).Role
+    )
+);
+Set(
+    UserRole,
+    UserRole1
+);
+Set(
+    UserRoleGlobal,
+    UserRole1
+);
+UpdateContext({UserRole: UserRole1});
+Set(
+    userInfo,
+    LookUp(
+        &#39;OPT - Employees Informations&#39;,
+        &#39;Email Address&#39; = userMail
+    )
+);</code></pre><p>User access to the application is based on the email address registered within the application. As I understand it, only users in the Optumus Active Directory should be able to access it. However, to add an extra layer of security, I ensure that the logged-in user is registered in both the &#39;OPT - Employees Information&#39; and &#39;OPT - Admin Schemas&#39; tables.</p><p>The reason the UserRole variable was defined multiple times is that, during the initial development stages, I didn&#39;t fully understand how to pass global and context variables between windows. At some point, everything crashed when using the UserRole context variable, so it became necessary to define UserRoleGlobal to use as a single entity throughout the entire application.</p><p>Proceed carefully if you plan to remove the other UserRole variables, as there may be some legacy instances where the global one might not work. For example, it currently doesn&#39;t work in the Attachment sections for some reason.</p><p>An Unauthorized user will encounter the following screen: </p><p><img src="../assets/ECA Screenshots/Unauthorized.png" alt="image"/></p><p>This element is a container called &quot;UnauthorizedUser&quot;, and it prevents an unauthorized agent to interact with the application. The Visible property of this contains this piece of code: </p><pre><code class="nohighlight hljs">IsBlank(LookUp(&#39;OPT - Admin Schemas&#39;, &#39;Email Address&#39;=User().Email)) And IsBlank(LookUp(&#39;OPT - Admin Schemas&#39;, &#39;Email Address 2&#39;=User().Email)) </code></pre><p>Additionally, PowerApps has an issue with deploying the most up-to-date versions of the application to users. When a new version is pushed, it is not guaranteed that all users will have the latest version unless they refresh their browser. To avoid conflicts, we deny access to anyone not using the correct version number. On the hidden &quot;TimerTrigger&quot; element, we run:</p><pre><code class="nohighlight hljs">If(
+
+    LookUp(&#39;OPT - Projects Versions Archive&#39;, &#39;Project Name&#39;=&quot;Employee Care Anywhere&quot;).
+    &#39;Version Name&#39;&lt;&gt;&quot;0.9.96&quot;, Navigate(ScrVerError)
+);</code></pre><p>This code is deemed to be updated everytime a major version is released, and it&#39;s necessary to make the changes manually at both the application, and on the SharePoint List &#39;OPT - Projects Versions Archive&#39;.</p><p><strong>Round Buttons</strong></p><p><img src="../assets/ECA Screenshots/RoundButtons.png" alt="image"/></p><p>These buttons are designed within a container structure that includes the icon, label, and two additional buttons to create a shadowing effect when the pointer hovers over them. Typically, these buttons navigate users to different sections of the application.</p><pre><code class="nohighlight hljs">Navigate(scrTicketDashboardClient,ScreenTransition.Fade)</code></pre><p>When a button is not displayed in the regular blue color, it indicates that there are pending tasks to complete. In the picture above, the &quot;Profile&quot; button is orange, signaling that the user has pending documents to sign. Instead of directing the user to their profile information, the button will take them to the &quot;Documents to Sign&quot; section.</p><p>The coloring of these buttons is controlled on the &quot;Fill&quot; property of the button object:</p><pre><code class="nohighlight hljs">If(
+    !IsEmpty(docsVarMainScr),
+    RGBA(249, 85, 4, 1),
+    RGBA(48, 75, 106, 1)
+    )</code></pre><p>The &quot;docsVarMainScr&quot;, and the rest of variables controlling these buttons, are defined in the &quot;TimerTrigger&quot; element discussed below.</p><p><strong>TimeTrigger Element</strong></p><p>The &quot;TimerTrigger&quot; was included to avoid performance issues during the application&#39;s startup. We also observed that running a large snippet in the &quot;OnVisible&quot; property of a window can lead to unexpected behavior when handling large datasets.</p><p>In this section, we define important variables, such as those controlling the behavior of buttons for Profile, Time-Off Requests, and Pending WUs. Additionally, we define the collection of users in the Active Directory and set the visibility condition to notify admins when no new holidays have been established.</p><pre><code class="nohighlight hljs">ClearCollect(
+    users365,
+    Office365Users.SearchUser(
+        {
+            searchTerm: &quot;&quot;,
+            top: 999
+        }
+    )
+);</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../Miscellaneous/">« General Info on miscellaneous components</a><a class="docs-footer-nextpage" href="../SearchEmployees/">Example.jl Documentation frgergergwergerg »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.7.0 on <span class="colophon-date" title="Tuesday 5 November 2024 18:10">Tuesday 5 November 2024</span>. Using Julia version 1.11.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
